@@ -2,9 +2,15 @@ Feedback Web App is a interractive comment section made with Nextjs (Reactjs), S
 
 ## Getting Started
 
-First, clone repository:
+First, clone repository and server repository:
+- feedback web
 ```
-git clone `repository link`
+git clone https://github.com/Gatesvert81/Feedback-Website
+```
+
+- feedback server
+```
+git clone https://github.com/Gatesvert81/feedbackweb-server
 ```
 
 
@@ -14,7 +20,7 @@ Second, go to each folder and install all neccessary packages:
 $ cd feedbackweb
 $ npm install
 ```
-- server;
+- feedback server;
 ```
 $ cd server
 $ npm install
