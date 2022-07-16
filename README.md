@@ -1,8 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Feedback Web App is a interractive comment section made with Nextjs (Reactjs), StyledComponents and MySQL database for storing data.
 
 ## Getting Started
 
-First, run the development server:
+First, clone repository:
+```
+git clone `repository link`
+```
+
+
+Second, go to each folder and install all neccessary packages:
+- feedbackweb;
+```
+$ cd feedbackweb
+$ npm install
+```
+- server;
+```
+$ cd server
+$ npm install
+```
+
+Lastly, run on development mode:
 
 ```bash
 npm run dev
@@ -14,21 +32,25 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Web App Flow
+There are two main folders in this app
+- Feedbackweb
+- Server
 
-## Learn More
+# Feedback Web
+This is the front-end part of the website made with [Next.js](https://nextjs.org/docs).js. It contains ;
+- src folder: This contains all components and stying
+- pages which contains all pages in the website. There are simple codes which can be easily understood and changed.
 
-To learn more about Next.js, take a look at the following resources:
+# Server
+This is the server that reciees get and post request and interacts withe the database (MySQL) to deliver responses. It contains;
+- `app.js` file which contains all post and get requests.
+- `dbService.js` file contains all database functions fro authentication to storing of feedbacks
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Progress
+This Website has not been deployed because I'm currently unable to verify my heroku server account to enable connection with backend. Neithertheless, its an amazing fullstack project and will hopefully settle m issues with heroku server and deploy it soon.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
